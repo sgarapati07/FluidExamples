@@ -38,6 +38,10 @@ module.exports = env => {
                 template: "./public/index.html",
             }),
         ],
+        externals:[
+            'child_process',
+            'fs'
+        ],
         mode: "development",
         devtool: "inline-source-map"
     });

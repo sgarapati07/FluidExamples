@@ -134,7 +134,7 @@ export const useDocumentManagerData = (): DocumentManager | undefined => {
                     new Map([[requestUrl, resolved]]));
                 
                 const codeLoader = new NodeCodeLoader(installPath, timeoutMS);
-                const tokenProvider = new InsecureTokenProvider(tenantKey, user);
+                const tokenProvider = new InsecureTokenProvider(tenantId,documentId,tenantKey, user);
 
                 
             
