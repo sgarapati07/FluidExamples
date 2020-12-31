@@ -10,6 +10,10 @@ module.exports = env => {
         resolve: {
             extensions: [".ts", ".tsx", ".js"],
         },
+        node: {
+            child_process: "empty",
+            fs: "empty", // if unable to resolve "fs"
+        },
         module: {
             rules: [{
                 test: /\.tsx?$/,
